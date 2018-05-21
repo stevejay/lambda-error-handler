@@ -41,6 +41,22 @@ it("should handle an unknown error", async () => {
   });
 });
 
+it("should handle an unknown error with no message", async () => {
+  const result = await withErrorHandling(async () => {
+    const error = new Error();
+    throw error;
+  })();
+
+  expect(result).toEqual({
+    statusCode: 500,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Credentials": true
+    },
+    body: '{"error":"[500] Unknown error"}'
+  });
+});
+
 it("should handle a formatted error", async () => {
   const result = await withErrorHandling(async () => {
     const error = new Error("[404] Not found");
