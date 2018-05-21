@@ -1,0 +1,31 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "editor.renderWhitespace": "all",
+    "editor.tabCompletion": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/build": true,
+        "**/node_modules": true,
+        "design/**": true,
+        "**/npm-debug.log": true,
+        "coverage/**": true
+    },
+    "search.exclude": {
+        "**/___*": true
+    },
+    "editor.formatOnSave": true,
+    "[html]": {
+        "editor.formatOnSave": false
+    },
+    "editor.tabSize": 2,
+    "beautify.options": {
+        "end_with_newline": true,
+        "preserve_newlines": true,
+        "indent_size": 2
+    },
+    "javascript.validate.enable": false,
+    "jest.pathToJest": "npm test --"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "lambda-error-handler",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevejay/lambda-error-handler"
+  },
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=8.10"
+  },
+  "description": "Error handling decorator for AWS Lambda functions when used with the Serverless framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "posttest": "yarn run lint",
+    "lint": "eslint ."
+  },
+  "author": {
+    "name": "Steve Johns",
+    "email": "steve@stevejay.net"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "jest": "^22.4.4"
+  },
+  "keywords": [
+    "lambda",
+    "serverless",
+    "error"
+  ],
+  "dependencies": {}
+}
