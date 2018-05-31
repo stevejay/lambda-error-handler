@@ -27,6 +27,10 @@ async function handler(event) {
 module.exports.handler = withErrorHandling(handler);
 ```
 
+## Changelog
+
+* v1.1.0: Added content type header to error response.
+
 ## License
 
 [MIT](LICENSE)
