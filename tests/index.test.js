@@ -18,6 +18,7 @@ it("should handle a conditional check failure", async () => {
   expect(result).toEqual({
     statusCode: 400,
     headers: {
+      "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Credentials": true
     },
@@ -34,6 +35,7 @@ it("should handle an unknown error", async () => {
   expect(result).toEqual({
     statusCode: 500,
     headers: {
+      "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Credentials": true
     },
@@ -50,6 +52,7 @@ it("should handle an unknown error with no message", async () => {
   expect(result).toEqual({
     statusCode: 500,
     headers: {
+      "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Credentials": true
     },
@@ -66,6 +69,7 @@ it("should handle a formatted error", async () => {
   expect(result).toEqual({
     statusCode: 404,
     headers: {
+      "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Credentials": true
     },
